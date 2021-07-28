@@ -1,0 +1,1 @@
+{"hue_low": 15, "saturation_low": 110, "value_low": 144, "hue_high": 26, "saturation_high": 255, "value_high": 255, "min_area_size": 5000, "max_area_size": 75000, "offset_x": 350, "offset_y": 0, "kp": 0.008, "kd": 0.003, "max_speed": 0.8, "forward_velocity": 0.2}

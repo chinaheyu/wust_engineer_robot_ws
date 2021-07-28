@@ -1,8 +1,9 @@
-#include <ros/ros.h>
-#include <geometry_msgs/Twist.h>
+#include "ros/ros.h"
+#include "geometry_msgs/Twist.h"
 #include "wust_base/crc.h"
 #include "wust_base/serial_device.h"
 #include "wust_base/wust_base.h"
+
 
 SerialDevice serial("/dev/serial_sdk");
 
@@ -10,6 +11,7 @@ cmd_vel_t cmd_vel;
 
 uint8_t txBuf[USB_FRAME_MAX_SIZE];
 uint8_t seq = 0;
+
 
 void protocol_transmit(uint16_t cmd_id, uint8_t* data, uint16_t len)
 {
@@ -40,6 +42,7 @@ void velCallback(const geometry_msgs::Twist::ConstPtr& data)
     protocol_transmit(0x0101, (uint8_t*)&cmd_vel, sizeof(cmd_vel_t));
 }
 
+
 int main(int argc, char** argv)
 {
     ros::init(argc, argv, "wust_base");
@@ -47,15 +50,7 @@ int main(int argc, char** argv)
     
     ros::Subscriber vel_sub = nh.subscribe("/cmd_vel", 10, velCallback);
 
-    ros::Rate loop_rate(2);
-    ros::AsyncSpinner spinner(1);
-    spinner.start();
-    while (nh.ok())
-    {
-        // heart tick
-        protocol_transmit(0x0001, nullptr, 0);
-        loop_rate.sleep();
-    }
-    spinner.stop();
+    ros::spin();
+    
     return 0;
 }

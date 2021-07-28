@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/dji/rm_auto_ws/devel/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/dji/rm_auto_ws/src/auto_align/include/**",
+        "/home/dji/rm_auto_ws/src/controller/include/**",
+        "/home/dji/rm_auto_ws/src/detector/include/**",
+        "/home/dji/rm_auto_ws/src/monocular_camera/include/**",
+        "/home/dji/rm_auto_ws/src/referee_system/include/**",
+        "/home/dji/rm_auto_ws/src/serial/include/**",
+        "/home/dji/rm_auto_ws/src/turtle_bridge/include/**",
+        "/home/dji/wust_engineer_robot_ws/src/wust_base/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

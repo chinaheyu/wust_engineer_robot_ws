@@ -29,5 +29,30 @@ typedef struct
 }__attribute__((packed)) cmd_vel_t;
 
 
+typedef enum
+{
+    STEP_HEADER_SOF  = 0,
+    STEP_LENGTH_LOW  = 1,
+    STEP_LENGTH_HIGH = 2,
+    STEP_FRAME_SEQ   = 3,
+    STEP_HEADER_CRC8 = 4,
+    STEP_DATA_CRC16  = 5,
+} unpack_step_e;
+
+typedef struct
+{
+    double position_x;
+    double position_y;
+    double angle_w;
+}__attribute__((packed)) robot_position_t;
+
+typedef struct
+{
+    frame_header_t *p_header;
+    uint16_t       data_len;
+    uint8_t        protocol_packet[USB_FRAME_MAX_SIZE];
+    unpack_step_e  unpack_step;
+    uint16_t       index;
+} unpack_data_t;
 
 #endif
