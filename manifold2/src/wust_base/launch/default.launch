@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="wust_base" name="wust_base" type="wust_base_node" output="screen" respawn="true"/>
+</launch>

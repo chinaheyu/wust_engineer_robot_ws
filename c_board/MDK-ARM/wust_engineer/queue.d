@@ -1,0 +1,15 @@
+.\wust_engineer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
+.\wust_engineer\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\wust_engineer\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\wust_engineer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+.\wust_engineer\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\wust_engineer\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\wust_engineer\queue.o: ../Inc/FreeRTOSConfig.h
+.\wust_engineer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+.\wust_engineer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+.\wust_engineer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+.\wust_engineer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+.\wust_engineer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+.\wust_engineer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+.\wust_engineer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+.\wust_engineer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h

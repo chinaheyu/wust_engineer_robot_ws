@@ -1,3 +1,0 @@
-<launch>
-    <node pkg="wust_auto_align" name="wust_auto_align" type="wust_auto_align_node.py" output="screen" respawn="true" />
-</launch>

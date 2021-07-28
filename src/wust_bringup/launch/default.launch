@@ -1,4 +1,0 @@
-<launch>
-    <include file="$(find wust_base)/launch/default.launch"/>
-    <include file="$(find wust_auto_align)/launch/default.launch"/>
-</launch>
